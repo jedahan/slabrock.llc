@@ -1,4 +1,33 @@
-<ul>
-  <li><a href=https://instagram.com/slabrockny>work</a>
-  <li><a href=mailto:jake@slabrock.llc>contact</a>
-<ul>
+<style>
+a {
+  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+  font-size: 7vh;
+}
+
+header {
+  height: 80vh;  
+  object-position: center;
+}
+
+img {
+  max-height: 80vh;
+  max-width: 98vw;
+}
+</style>
+
+<header>
+  <img src=images/12.jpg />
+</header>
+
+<nav>
+  <ol>
+    <li><a href=https://instagram.com/slabrockny>work</a>
+    <li><a href=#mailto:jake@slabrock.llc>contact</a>
+  </ol>
+</nav>
+
+<script>
+  const src=`images/${Math.ceil(Math.random() * 12)}.jpg`
+  document.querySelector('img').setAttribute('src', src)
+</script>
+
